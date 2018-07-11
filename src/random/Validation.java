@@ -9,16 +9,32 @@ import javax.swing.JOptionPane;
 
 public class Validation {
 	public static void main(String[] args) {
-		
+		for(int i=0;i<10;i++) {
 		Random randomMaker = new Random();
-		
+				
 		int randomNumber = randomMaker.nextInt(5);
 		
 		System.out.println(randomNumber);
-
+		// 2. Repeat all the code above 10 times
 		// 1. Use each value of randomNumber to give the user a random compliment.
 
-		// 2. Repeat all the code above 10 times
+		if(randomNumber==0) {
+			JOptionPane.showMessageDialog(null, "You're amazing!");
+		}
+		if(randomNumber==1) {
+			JOptionPane.showMessageDialog(null, "You look great!");
+		}
+		if(randomNumber==2) {
+			JOptionPane.showMessageDialog(null, "You're so talented!");
+		}
+		if(randomNumber==3) {
+			JOptionPane.showMessageDialog(null, "You're doing great. Keep it up!");
+		}
+		if(randomNumber==4) {
+				JOptionPane.showMessageDialog(null, "Look in the mirror and you'll find an amazing human being :)");
+		}
+		}
+	
 		
 		// 3. Find someone to test out your program. They will like it :)
 	}
